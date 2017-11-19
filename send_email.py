@@ -28,8 +28,6 @@ part.add_header('Content-Disposition', 'attachment; filename= '+filename)
 msg.attach(part)
 text = msg.as_string()
 
-
-
 server = smtplib.SMTP('smtp.gmail.com', 587)
 server.starttls() 
 server.login(email_from, password)
